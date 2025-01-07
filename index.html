@@ -31,12 +31,17 @@ Target:  https://34.110.212.83.nip.io/
         <li><button id="subcribeButton" type="button">Subscribe</button></li>
         <li><button id="registrationButton" type="button">Registration</button></li>
 
-
+<!-- Integrity Testing --> 
+<li><button id="unverifiedEvent_button" type="button">unverifiedEvent</button></li>
+<!-- Integrity Testing -->
       
     </ul>
     </div>
 <script type="text/javascript">
 
+// <!-- Integrity Testing -->
+document.getElementById('unverifiedEvent_button').addEventListener('click', function() {cbq('track', 'unverifiedEvent', {value: 100,currency: 'USD',ssn:'11223333'  }) }, false);
+// <!-- Integrity Testing -->
   
 document.getElementById('addToWishlistButton').addEventListener('click', function() {
   cbq('track', 'AddToWishlist');
