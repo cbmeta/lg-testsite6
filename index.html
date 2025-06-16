@@ -50,7 +50,7 @@
   <li><button id="registrationButton" type="button">Registration (x10)</button></li>
 </ul></div>
 <div><ul>
-  <li><button id="siteButton" type="button">Site 0 (x10)</button></li>
+  <li><button id="siteButton" type="button">Site 6 (x10)</button></li>
   <li><button id="invalidpurchaseButton" type="button">Invalid Purchase (x10)</button></li>
   <li><button id="searchButton" type="button">Search (x10)</button></li>
   <li><button id="contactButton" type="button">Contact (x10)</button></li>
@@ -67,7 +67,7 @@ document.getElementById('checkoutButton').addEventListener('click', function() {
 document.getElementById('purchaseButton').addEventListener('click', function() {cbq('track', 'Purchase', {value: '12.34',currency: 'USD',});}, false);
 document.getElementById('subcribeButton').addEventListener('click', function() {cbq('track', 'Subscribe');}, false);
 document.getElementById('registrationButton').addEventListener('click', function() {cbq('track', 'CompleteRegistration');}, false);
-document.getElementById('siteButton').addEventListener('click', function() {cbq('track', 'Site0')}, false);
+document.getElementById('siteButton').addEventListener('click', function() {cbq('track', 'Site6')}, false);
 document.getElementById('invalidpurchaseButton').addEventListener('click', function() {cbq('track', 'Purchase', {value: 'fdsjflds',currency: 'USD',});}, false);
 document.getElementById('searchButton').addEventListener('click', function() {cbq('track', 'Search'); }, false);    
 document.getElementById('contactButton').addEventListener('click', function() {cbq('track', 'Contact'); }, false);    
